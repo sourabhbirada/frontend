@@ -88,7 +88,7 @@ const AdminDashboard = () => {
       username: managerUsername, 
       email: managerEmail, 
       loginId: managerLoginId,
-      role: 'salesManager'  
+      role: 'salesmanager'  
     };
   
     try {
