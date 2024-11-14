@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "proxy": "http://localhost:9000"
+    "proxy": "https://backend-9rkk.onrender.com"
 
   },
   "dependencies": {
