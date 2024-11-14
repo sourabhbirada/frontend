@@ -23,6 +23,7 @@ html, body {
   background-color: #2A2A2A; /* Darker section background */
   border-radius: 5px;
   margin-bottom: 1rem;
+  margin-top:500px;
 }
 
 /* Task Form */
