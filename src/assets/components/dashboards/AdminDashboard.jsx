@@ -34,7 +34,7 @@ const AdminDashboard = () => {
   // Fetch all Sales Managers
   const fetchManagers = async () => {
     try {
-      const response = await axios.get('https://backendrender-3jek.onrender.com/admin/managers', { withCredentials: true });
+      const response = await axios.get('https://backend-9rkk.onrender.com/admin/managers', { withCredentials: true });
       setManagers(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error('Error fetching managers:', error);
@@ -45,7 +45,7 @@ const AdminDashboard = () => {
   // Fetch all Labors
   const fetchLabors = async () => {
     try {
-      const response = await axios.get('https://backendrender-3jek.onrender.com/admin/employees', { withCredentials: true });
+      const response = await axios.get('https://backend-9rkk.onrender.com/admin/employees', { withCredentials: true });
       setLabors(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error('Error fetching labors:', error);
@@ -94,9 +94,9 @@ const AdminDashboard = () => {
     try {
       if (editingManagerIndex !== null) {
         const managerId = managers[editingManagerIndex]._id;
-        await axios.put(`https://backendrender-3jek.onrender.com/admin/managers/${managerId}`, newManager);
+        await axios.put(`https://backend-9rkk.onrender.com/admin/managers/${managerId}`, newManager);
       } else {
-        await axios.post('https://backendrender-3jek.onrender.com/user/createuser', newManager);
+        await axios.post('https://backend-9rkk.onrender.com/user/createuser', newManager);
       }
       fetchManagers(); 
       setIsAddManagerVisible(false);
@@ -121,9 +121,9 @@ const AdminDashboard = () => {
     try {
         if (editingLaborIndex !== null) {
             const laborId = labors[editingLaborIndex]._id;
-            await axios.put(`https://backendrender-3jek.onrender.com/admin/employees/${laborId}`, newLabor);
+            await axios.put(`https://backend-9rkk.onrender.comadmin/employees/${laborId}`, newLabor);
         } else {
-            await axios.post('https://backendrender-3jek.onrender.com/user/createuser', newLabor);  
+            await axios.post('https://backend-9rkk.onrender.com/user/createuser', newLabor);  
         }
         fetchLabors(); 
         setIsAddLaborVisible(false);
@@ -141,7 +141,7 @@ const AdminDashboard = () => {
   const handleDeleteManager = async (index) => {
     const managerId = managers[index]._id;
     try {
-      await axios.delete(`https://backendrender-3jek.onrender.com/admin/managers/${managerId}`);
+      await axios.delete(`https://backend-9rkk.onrender.com/admin/managers/${managerId}`);
       fetchManagers(); 
     } catch (error) {
       console.error('Error deleting manager:', error);
@@ -152,7 +152,7 @@ const AdminDashboard = () => {
   const handleDeleteLabor = async (index) => {
     const laborId = labors[index]._id;
     try {
-      await axios.delete(`https://backendrender-3jek.onrender.com/admin/employees/${laborId}`);
+      await axios.delete(`https://backend-9rkk.onrender.com/admin/employees/${laborId}`);
       fetchLabors(); 
     } catch (error) {
       console.error('Error deleting labor:', error);
@@ -184,7 +184,7 @@ const AdminDashboard = () => {
   // View Location
   const handleViewLocation = async (id, role) => {
     try {
-      const response = await axios.get(`https://backendrender-3jek.onrender.com/admin/location/${role}/${id}`);
+      const response = await axios.get(`https://backend-9rkk.onrender.com/admin/location/${role}/${id}`);
       setViewLocation(response.data); // Set location data
     } catch (error) {
       console.error('Error fetching location:', error);
