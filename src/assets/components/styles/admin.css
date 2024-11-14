@@ -1,0 +1,218 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181A1B; /* Dark background for the body */
+    color: #FFFFFF; /* Set text color to white */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Admin Dashboard Layout */
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100vw; /* Ensure full width */
+    box-sizing: border-box;
+}
+
+/* Sidebar Styling */
+.admin-sidebar {
+    width: 250px;
+    background-color: #1E2426; /* Darker shade for sidebar */
+    color: #ffffff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Ensure sidebar takes full height */
+    position: fixed; /* Keep the sidebar fixed */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure sidebar is always on top */
+}
+
+.admin-sidebar h5 {
+    margin-top: 0;
+    font-size: 1.7em;
+    color: #ffffff;
+}
+
+.admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.admin-sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
+
+.admin-sidebar ul li a:hover {
+    color: #3498db; /* Blue hover effect */
+}
+
+.logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Main Content Styling */
+.admin-main-content {
+    flex-grow: 1;
+    padding: 40px 30px; /* Adjust padding for main content */
+    background-color: #2A2A2A; /* Darker background for main content */
+    margin-left: 290px; /* Space to the left of the sidebar */
+    overflow-y: auto;
+    height: 100vh; /* Fill the remaining height */
+    box-sizing: border-box;
+    color: #FFFFFF; /* Set main content text to white */
+}
+
+/* Header for each section */
+h3 {
+    font-size: 2.4em;
+    color: #FFFFFF; /* White color for headers */
+    margin-top: 0;
+}
+
+h4 {
+    color: #FFFFFF; /* White color for sub-headers */
+    margin-top: 20px;
+}
+
+/* Error Message Styling */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+}
+
+/* Add Manager/Labor Form Styling */
+.add-manager-form, .add-labor-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-manager-form input,
+.add-labor-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #333333; /* Darker border for input fields */
+    background-color: #3A3A3A; /* Dark background for inputs */
+    color: #FFFFFF;
+}
+
+.add-manager-form button,
+.add-labor-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-manager-form button:hover,
+.add-labor-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #2E2E2E; /* Dark background for table */
+}
+
+.admin-table th, .admin-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #444444; /* Darker border for table cells */
+    color: #FFFFFF; /* White text color */
+}
+
+.admin-table th {
+    background-color: #333333; /* Dark header background */
+    font-size: 1.1em;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #3B3B3B;
+}
+
+.admin-table tr:hover {
+    background-color: #444444;
+}
+
+/* Button Styling for Actions */
+.action-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #2980b9;
+}
+
+.action-button:focus {
+    outline: none;
+}
+
+.location-viewer {
+    margin-top: 40px;
+    background-color: #444444;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.location-viewer h4 {
+    font-size: 1.6em;
+    color: #FFFFFF;
+}
+
+.location-viewer p {
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #2A2A2A;
+}
