@@ -1,12 +1,11 @@
 /* General dashboard styling */
 .hd-panel {
-    margin-top:1800px;
+    margin-top:2000px;
     color: #e0e0e0;
     background-color: #121212;
     padding: 2rem;
     font-family: Arial, sans-serif;
     max-width: 900px;
-    margin: auto;
     border-radius: 12px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
