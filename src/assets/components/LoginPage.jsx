@@ -63,7 +63,7 @@ const LoginPage = () => {
 
     return (
         <div className="login-container">
-            <div className="title">ERP System Login</div>
+            <div className="title">System Login</div>
             <div className="role-selector">
                 <button onClick={() => selectRole('admin')}>Admin</button>
                 <button onClick={() => selectRole('salemanger')}>Sales Manager</button>
